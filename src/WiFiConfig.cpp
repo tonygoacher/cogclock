@@ -26,6 +26,7 @@ static const char index_html[] PROGMEM = R"rawliteral(
   <form action="/get">
     SSID: <input type="text" name="ssid">
     Password: <input type="text" name="password">
+    NTP: <input type="text" name="ntp">
     <input type="submit" value="Submit">
   </form><br>
 </body></html>)rawliteral";
@@ -47,6 +48,7 @@ void WiFiConfig::DoWifiConfig()
     m_Server->on("/get", HTTP_GET, [](AsyncWebServerRequest* request) {
         String ssid;
         String password;
+        String ntp;
         // GET input1 value on <ESP_IP>/get?input1=<inputMessage>
         if (request->hasParam("ssid")) {
             ssid = request->getParam("ssid")->value();
@@ -55,6 +57,18 @@ void WiFiConfig::DoWifiConfig()
         // GET input2 value on <ESP_IP>/get?input2=<inputMessage>
         if (request->hasParam("password")) {
             password = request->getParam("password")->value();
+
+        }
+
+         // GET input2 value on <ESP_IP>/get?input2=<inputMessage>
+        if (request->hasParam("ntp")) {
+            ntp = request->getParam("ntp")->value();
+            if(ntp.length() != 0)
+            {
+                Serial.print("NTP URL set to ");
+                Serial.println(ntp.c_str());
+                Settings::Instance()->SetNTP(ntp.c_str());
+            }
 
         }
 

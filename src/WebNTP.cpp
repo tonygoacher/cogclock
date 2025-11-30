@@ -51,31 +51,14 @@ void Send(AsyncWebServerRequest* request)
 
 void WebNtp::Begin()
 {
-    DateTime.setTimeZone(0);
-    DateTime.setServer(Settings::Instance()->GetNtp());
-    DateTime.begin(15 * 1000);
-
-    m_Server = new 	AsyncWebServer(80);
-   
-    m_Server->on("/", HTTP_GET, Send);
-
-
-    m_Server->on("/", HTTP_GET, Send);
-
-    // Send a GET request to <ESP_IP>/get?input1=<inputMessage>
-    m_Server->on("/get", HTTP_GET, [](AsyncWebServerRequest* request) {
-        String NTP;
   
-        // GET input1 value on <ESP_IP>/get?input1=<inputMessage>
-        if (request->hasParam("NTP")) {
-            NTP = request->getParam("NTP")->value();
-            Settings::Instance()->SetNTP(NTP.c_str());
-            Settings::Instance()->Write();
-            resetFunc();
-        }
-        // GET input2 value on <ESP_IP>/get?input2=<inputMessage>
-      
-        });
-    m_Server->onNotFound(notFound);
-    m_Server->begin();
+
+
+    DateTime.setTimeZone(0);
+ 
+    Serial.print("Setting NTP URL to");
+    Serial.println(Settings::Instance()->GetNtp());
+    DateTime.setServer(Settings::Instance()->GetNtp());
+
+    DateTime.begin(15 * 1000);
 }
