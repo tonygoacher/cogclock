@@ -108,7 +108,7 @@ CogClock::CogClock(uint8_t minuteStep, uint8_t minutDir, uint8_t hourStep, uint8
 	m_MinsControl.homeDistance = -800;
 	m_MinsControl.initFunction = &CogClock::InitMinutes;
 	m_MinsControl.pumpFunction = &CogClock::TickMinutes;
-	m_MinsControl.currentState = CogClock::NotCalibrated;;
+	m_MinsControl.currentState = CogClock::NotCalibrated;
 
 	m_HourControl.port = hourSensorPort;
 
@@ -203,8 +203,7 @@ void CogClock::TickMinutes()
 }
 
 void CogClock::PumpRing(Stepper* stepper, CogClock::RingControl* control)
-{
-	
+{		
 		switch (control->currentState)
 		{
 			case CogClock::NotCalibrated:

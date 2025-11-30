@@ -67,30 +67,30 @@ void setup() {
     Serial.println("Startup...");
     
     WiFi.mode(WIFI_STA);
+    Serial.printf("Connecting to %s",Settings::Instance()->GetSSID());
     WiFi.begin(Settings::Instance()->GetSSID(), Settings::Instance()->GetPassword());
-   
-    if (WiFi.waitForConnectResult() != WL_CONNECTED) {
+
+    if (WiFi.waitForConnectResult() != WL_CONNECTED)
+    {
         Serial.println("WiFi Failed!");
-   
-        Serial.println(WiFi.softAP("ESPsoftAP_01") ? "Ready" : "Failed!");
+        WiFi.mode(WIFI_OFF);
+        delay(1000);
+        WiFi.mode(WIFI_AP);
+        Serial.println(WiFi.softAP("CogClock", "password") ? "Ready" : "Failed!");
         WiFiConfig wifiConfig;
         wifiConfig.DoWifiConfig();
         while (1)
         {
-            wdt_reset();
+            delay(500);
         }
     }
     Serial.println();
     Serial.print("IP Address: ");
     Serial.println(WiFi.localIP());
+
     webNtp.Begin();
 
-    Serial.println("Awaiting NTP");
-    clockSource.Init();
-   // clockSource.SetMinsStepper(cogClock.GetMinsStepper());
-  // clockSource.SetHoursStepper(cogClock.GetHoursStepper());
-   
-    
+    clockSource.Init();   
 }
 
 bool initDone = false;
@@ -108,5 +108,5 @@ void loop() {
     else
     {
         cogClock.Pump();
-    }
+    }     
  }

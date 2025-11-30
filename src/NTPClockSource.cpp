@@ -108,6 +108,7 @@ bool NTPClockSource::Running()
 	bool running = false;
 	if (DateTime.isTimeValid() && !m_InitDone)
 	{
+		Serial.println("Getting timefrom NTP");
 		if (timeStatus() != timeSet)
 		{
 			setSyncProvider((long long int (*)())getTimeFromNtp);

@@ -22,7 +22,7 @@ protected:
 private:
 
 
-	typedef enum CalibrationState
+	enum CalibrationState
 	{
 		NotCalibrated,
 		LoseInitialSensing,
@@ -36,7 +36,7 @@ private:
 		Calibrated,
 	};
 
-	typedef struct RingControl
+	struct RingControl
 	{
 		int stabTimer;
 		uint8_t port;
