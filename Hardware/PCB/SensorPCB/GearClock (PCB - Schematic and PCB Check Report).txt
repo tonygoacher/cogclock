@@ -1,0 +1,18 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report Written:     Monday, December 21, 2020
+Project Path:       N:\Arduino\GearClock\Electronics\GearClock.prj
+Design Path:        N:\Arduino\GearClock\Electronics\GearClock.pcb
+Design Title:       
+Created:            01/07/2020 19:40:11
+Last Saved:         21/12/2020 12:39:10
+Editing Time:       343 min
+Units:              mm (precision 1)
+
+
+Checking integrity of Schematic and Pcb designs in project "GearClock"
+======================================================================
+
+
+End Of Report.

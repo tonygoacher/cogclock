@@ -1,0 +1,70 @@
+Design Rule Check Report
+------------------------
+
+Report Written:     Tuesday, December 15, 2020
+Project Path:       N:\Arduino\GearClock\ESPPCB\GearClockControl.prj
+Design Path:        N:\Arduino\GearClock\ESPPCB\GearClockControl.pcb
+Design Title:       
+Created:            08/11/2020 12:38:46
+Last Saved:         15/12/2020 16:44:25
+Editing Time:       7455 min
+Units:              mm (precision 1)
+
+
+Results
+=======
+
+Component to Component Error (Cm-Cm) between (48.5 -30.0) and (41.5 -30.0) on Layer "[Top]".
+    U1 - R1, Gap is 0.0.
+Component to Component Error (Cm-Cm) between (41.6 -16.3) and (41.6 -23.0) on Layer "[Top]".
+    U1 - R2, Gap is 0.0.
+
+Number of errors found : 2
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    Yes
+
+
+Manufacturing
+
+==============
+
+Drill Breakout                  No
+Drill Backoff                   No
+Silkscreen Overlap              No
+Copper Text In Board            No
+Min Track Width                 No
+Min Annular Ring                No
+Min Paste Size                  No
+Vias In Pads                    No
+Unplated Vias                   No
+Unplated Pads With Inner Tracks No
+
+
+Nets
+
+=====
+
+Net Completion               Yes
+Dangling Tracks              Yes
+Net Track Length Differences No
+Nets without Components      No
+Nets on No Connect pins      No
+
+
+
+End Of Report.
