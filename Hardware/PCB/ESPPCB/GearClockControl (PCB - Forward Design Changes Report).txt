@@ -1,0 +1,29 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Tuesday, December 15, 2020
+Project Path:       N:\Arduino\GearClock\ESPPCB\GearClockControl.prj
+Design Path:        N:\Arduino\GearClock\ESPPCB\GearClockControl.pcb
+Design Title:       
+Created:            08/11/2020 12:38:46
+Last Saved:         23/11/2020 17:15:14
+Editing Time:       7444 min
+Units:              mm (precision 1)
+
+Disconnected pin "U1.3" from net "MIN_LED_MOSFET_DRIVE".
+Disconnected pin "J2.3" from net "MIN_LED_DRIVE".
+Disconnected pin "U5.2" from net "MIN_LED_DRIVE".
+Disconnected pin "U5.1" from net "MIN_LED_MOSFET_DRIVE".
+Disconnected pin "U5.3" from net "0V".
+
+Deleted component reference "U5".
+
+Connected pin "U1.3" to net "_EN".
+Connected pin "J2.3" to net "HOUR_LED_DRIVE".
+Connected pin "U2.1" to net "_EN".
+Connected pin "U3.1" to net "_EN".
+
+Net "_EN" changed from net class "Power" to net class "Signal".
+
+
+End Of Report.

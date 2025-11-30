@@ -1,0 +1,145 @@
+Plot Report
+-----------
+
+Report Written:     Tuesday, December 15, 2020
+Project Path:       N:\Arduino\GearClock\ESPPCB\GearClockControl.prj
+Design Path:        N:\Arduino\GearClock\ESPPCB\GearClockControl.pcb
+Design Title:       
+Created:            08/11/2020 12:38:46
+Last Saved:         15/12/2020 16:44:25
+Editing Time:       7456 min
+Units:              mm (precision 1)
+
+
+Device Settings
+===============
+
+
+Gerber Settings
+===============
+
+    Leading zero suppression.
+    G01 assumed throughout.
+    Line termination <*> <CR> <LF>.
+    3.5 format absolute inches.
+    Format commands defined in Gerber file.
+    Aperture table defined in Gerber file.
+    Hardware arcs allowed.
+
+
+Drill Settings
+==============
+
+    Excellon Format 2
+    Format 3.5 absolute in mm.
+    Zero suppression Leading
+
+
+
+Plots Output
+============
+
+    Plot Job: "N:\Arduino\GearClock\ESPPCB\GearClockControl.mop"
+
+
+Gerber Output
+=============
+
+N:\Arduino\GearClock\ESPPCB\GearClockControl - Top Copper.gbr
+
+    Layers:
+    ------------------
+    Top Copper
+    Board Outlines
+
+    D-Code Shape  (thou)
+    ---------------------------------------------------------------
+    D10    Round 50.00
+    D11    Round 31.50
+    D12    Round 59.06
+    D13    Round 62.99
+    D14    Rectangle 70.87 X 118.11  Rotation 90
+    D16    Rectangle 70.87 X 110.24
+    D18    Square 78.74
+    D19    Octagon 78.74
+    D70    Round 12.00
+    D24    Rounded Rectangle 70.87 X 118.11 X 27.56  Rotation 90
+    D25    Rounded Rectangle 70.87 X 110.24 X 27.56
+
+Gerber Output
+=============
+
+N:\Arduino\GearClock\ESPPCB\GearClockControl - Bottom Copper.gbr
+
+    Layers:
+    -----------------
+    Bottom Copper
+
+    D-Code Shape  (thou)
+    ---------------------------------------------------------------
+    D10    Round 50.00
+    D11    Round 31.50
+    D12    Round 59.06
+    D13    Round 62.99
+    D14    Rectangle 70.87 X 118.11  Rotation 90
+    D16    Rectangle 70.87 X 110.24
+    D18    Square 78.74
+    D19    Octagon 78.74
+    D71    Round 10.00
+    D20    Round 15.75
+    D21    Rectangle 55.00 X 60.00
+    D22    Rectangle 55.00 X 60.00  Rotation 90
+    D23    Rectangle 40.00 X 48.00
+    D24    Rounded Rectangle 70.87 X 118.11 X 27.56  Rotation 90
+    D25    Rounded Rectangle 70.87 X 110.24 X 27.56
+
+NC Drill Output
+===============
+
+N:\Arduino\GearClock\ESPPCB\GearClockControl - Drill Data - [Through Hole].drl
+
+    Output:
+    ---------------------------
+    Plated Round Drill Holes
+    Plated Slots
+
+    Tool  Size           Count   ID
+    --------------------------------------
+    T001  0.02362 inches 26    A
+    T002  0.02400 inches 6     B
+    T003  0.03500 inches 18    F
+    T004  0.03543 inches 48    D
+    T005  0.03937 inches 3     E
+    T006  0.11811 inches 4     C
+    --------------------------------------
+    Total                105
+    --------------------------------------
+
+N:\Arduino\GearClock\ESPPCB\GearClockControl - Drill Data - [Through Hole] (Unplated).drl
+
+    Output:
+    -----------------------------
+    Unplated Round Drill Holes
+    Unplated Slots
+
+    Tool  Size Count   ID
+    ----------------------------
+    ----------------------------
+    Total      0
+    ----------------------------
+
+
+Gerber Output
+=============
+
+N:\Arduino\GearClock\ESPPCB\GearClockControl - BoardOutline.gbr
+
+    Layers:
+    ------------------
+    Board Outlines
+
+    D-Code Shape  (thou)
+    -----------------------
+    D70    Round 12.00
+
+End Of Report.
